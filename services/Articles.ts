@@ -22,11 +22,11 @@ export interface Article {
 interface ApiResponse {
     data: {
         articles: Article[];
+        articlesCount:number;
+
     };
 }
 export const getAllArticles=async(): Promise<AxiosResponse<ApiResponse>> =>{
     const response =await axios.get<ApiResponse>('/articles')
-    return response.data.articles;
-
-
+    return response.data;
 }

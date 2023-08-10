@@ -11,16 +11,9 @@ const Layout:FC<LayoutProps>=(props)=> {
         <>
         <Header/>
             <Container>
-            <Grid>
-                <Grid.Col md={9}>
                     <main >
                             {props.children}
                     </main>
-                </Grid.Col>
-                <Grid.Col md={3}>
-                    tags
-                </Grid.Col>
-            </Grid>
             </Container>
             <Footer/>
         </>

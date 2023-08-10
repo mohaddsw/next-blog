@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^3.2.0",
     "@mantine/core": "^6.0.18",
     "@mantine/hooks": "^6.0.18",
+    "@tabler/icons-react": "^2.30.0",
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",

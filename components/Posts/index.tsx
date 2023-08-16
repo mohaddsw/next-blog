@@ -7,7 +7,9 @@ import PostCard from "@/components/Posts/PostCard";
 
 
 const Posts=()=>{
-    const { data, isLoading,  } = useQuery('Articles', getAllArticles);
+    const { data, isLoading,  } = useQuery('Articles', getAllArticles, {
+        select: (res) => res.data.data.articles,
+    });
     return(
          <Card className="mb-5">
              <Tabs color="pink" defaultValue="AllPosts">

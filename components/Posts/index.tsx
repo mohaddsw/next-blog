@@ -4,11 +4,12 @@ import {useQuery} from "react-query";
 import {getAllArticles} from "@/services/Articles";
 import type {Article} from '@/types/articles'
 import PostCard from "@/components/Posts/PostCard";
+import {GetServerSideProps} from "next";
 
 
 const Posts=()=>{
     const { data, isLoading,  } = useQuery('Articles', getAllArticles, {
-        select: (res) => res.data.data.articles,
+        select: (res) => res.data.articles,
     });
     return(
          <Card className="mb-5">
@@ -33,3 +34,4 @@ const Posts=()=>{
 
 }
 export default Posts
+

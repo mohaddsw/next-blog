@@ -17,7 +17,5 @@ export type Article ={
 }
 
 export type ApiResponse= {
-    data: {
         articles: Article[];
-    };
 }

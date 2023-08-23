@@ -24,6 +24,9 @@ const Header=()=>{
                         <Button color='pink' variant="subtle" radius="xs" size="xs">
                         <Link href='/echarts'>echarts</Link>
                         </Button>
+                        <Button color='pink' variant="subtle" radius="xs" size="xs">
+                        <Link href='/showmore'>showmore</Link>
+                        </Button>
                     </Flex>
                 </Grid.Col>
 
